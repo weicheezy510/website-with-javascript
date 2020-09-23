@@ -1,0 +1,129 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+    padding: 0.5%;
+}
+body {
+    background-color: #F2F5FC;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    border: 1px solid black;
+    width: 100%;
+}
+#nav_menu ul {
+    background-color: #F2F5FC;
+    display: inline-flex;
+    width: 100%;
+    flex-basis: 100%;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding-top: 1%;
+    font-size: 120%;
+}
+#nav_menu ul li {
+    float: left;
+}
+#nav_menu ul li a {
+    text-align: center;
+    color: #27577E;
+}
+h1 {
+    padding: 2% 0 2% 0;
+    float: left;
+    color: #FEFEFE;
+}
+header {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #27577E ;
+}
+main {
+    width: 49%;
+    float: left;
+}
+aside {
+    width: 49%;
+    float: right;
+}
+main img {
+    max-width: 20%;
+    float: left;
+    padding: 0 0 0 1%;
+}
+aside img {
+    max-width: 20%;
+    float:left;
+}
+main p {
+    padding: 3% 0 2% 0;
+}
+aside p {
+    padding: 3% 0 2% 0;
+}
+h3 {
+    text-align: center;
+}
+h2 {
+    padding: 2% 0 0 0;
+    text-align: center;
+    color: #27577E;
+}
+footer {
+    clear: both;
+    background-color: #e9eeee;
+}
+footer iframe {
+    width: 40%;
+    height: 30%;
+}
+h5 {
+    padding: 1% 0 0 0;
+}
+footer nav {
+    padding: 3% 10%;
+    float: right;
+}
+footer ul {
+    list-style-type: none;
+    font-weight: bold;
+    float: right;
+    padding: 3%;
+}
+header img {
+    padding: 2% 0 2% 0;
+    max-width: 10%;
+    max-height: 10%;
+}
+#mobile_menu {display: none;}
+@media only screen and (max-width: 959px) {
+    
+    #nav_menu {display: block;}
+    #mobile_menu {display: none;}
+    main {
+    background-color: #F2F5FC;
+    border-bottom: none;}
+}
+@media only screen and (max-width: 767px) {
+    #nav_menu {display: none;}
+    #mobile_menu {display: block;}
+    main {
+    background-color: #F2F5FC;
+    border-bottom: none;}
+    footer ul {
+        float: none;
+        padding: 0;
+    }
+}
+@media only screen and (max-width: 480px) {
+    #nav_menu {display: none;}
+    #mobile_menu {display: block;}
+    main {
+    background-color: #F2F5FC;
+    border-bottom: none;}
+    footer ul {
+        float: none;
+        padding: 0;
+    }
+}

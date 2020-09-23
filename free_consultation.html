@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Free Consultation</title>   <!--title here-->
+    <link rel="shortcut icon" href="images/apple-touch-icon.png"> <!-- fav icon -->
+    <link rel="stylesheet" href="styles/normalize.css"> <!--normalize css-->
+    <script src="javascript/freeconsultation.js"></script> <!--javascript file-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8ff68c69b1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/freeconsultation.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="javascript/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#nav_menu").slicknav({prependTo:"#mobile_menu"});  
+        });
+    </script>          
+</head>
+<body>
+    <header>
+        <h1>Premier IT Company</h1>
+        <img src="images/IT-Support2.jpg" alt="IT support">
+    </header>
+    <nav id="mobile_menu"></nav>
+	<nav id="nav_menu">
+        <ul>
+            <li><a href="project_html.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="ITsupport.html">IT Support</a></li>
+            <li><a href="free_consultation.html">Free Consultation</a></li>
+            <li><a href="testimonial.html">Testimonials</a></li>
+        </ul>
+    </nav>
+    <main>
+    <div class="container">
+    <div class="wrapper">
+      <div class="companyInfo">
+          <h3>Free Consultation</h3>
+      </div>
+      <div class="contact">
+        <h3>Email Us</h3>
+        <form action="contact_us.html" method="POST" name="contact_form" id="contact_form">
+          <p>
+            <label for="Fullname">Full Name <span>*</span></label>
+            <input type="text" name="name" id="name">
+
+            <!-- <span>*</span><br> -->
+
+          </p>
+          <p>
+            <label for="company">Your company <span>*</span></label>
+            <input type="text" name="company" id="company">
+
+            <!-- <span>*</span><br> -->
+
+          </p>
+          <p>
+            <label for="email_address">Email <span>*</span></label>
+            <input type="text" name="email_address" id="email_address">
+
+            <!-- <span>*</span><br> -->
+
+          </p>
+          <p>
+            <label for="phone">Your phone number <span>*</span></label>
+            <input type="text" name="phone_number" id="phone_number">
+
+            <!-- <span>*</span><br> -->
+
+          </p>
+          <p>
+            <label for="jobTitle">Job Title <span>*</span></label>
+            <input type="text" name="jobTitle" id="jobTitle">
+            <!-- <span>*</span> <br> -->
+          </p>
+          <p>
+            <label for="employeeNumber">How many employees do you have? <span>*</span></label>
+            <input type="text" name="employee_count" id="employee_count">
+            <!-- <span>*</span> <br> -->
+          </p>
+
+          <p class="full">
+            <label for="servicesWanted">Briefly explain what services you are looking for? <span>*</span></label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            <!-- <span>*</span> <br> -->
+          </p>
+          <p class="full">
+            <input type="button" id="contact" value="Submit">
+          </p>
+
+          <!-- Reset Button -->
+
+          <p class="full">
+            <input type="button" id="resetForm" value="Reset">
+          </p>
+
+        </form>
+        <h2 id="registration_header">&nbsp;</h2>
+        <table id="registration_info"></table>
+      </div>
+    </div>
+  </div>
+    </main>
+<footer>
+    <h5>Address: 3000 Campus Hill Dr, Livermore, CA 94551</h5>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3156.3756508545894!2d-121.80266518468416!3d37.71085947977113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fe622a92b1e25%3A0xea4d3e179a776ef!2s3000%20Campus%20Hill%20Dr%2C%20Livermore%2C%20CA%2094551!5e0!3m2!1sen!2sus!4v1586296162978!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <ul>
+    <li>Contact Us!</li>
+    <li>Phone: <a>(925) 424-1000</a></li>
+    <li>Email: PremierIT@LPC.com</li>
+    </ul>  
+</footer>
+</body>
